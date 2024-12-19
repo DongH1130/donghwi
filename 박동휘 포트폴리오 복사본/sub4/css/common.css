@@ -1,0 +1,133 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2E3440;
+    color: #ECEFF4;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+#wrap {
+    width: 100%; 
+    margin: 0 auto;
+}
+
+#header, #footer {
+    background: #1E1E1E;
+    color: #ECEFF4;
+    text-align: center;
+    font-size: 26px;
+    line-height: 100px;
+    height: 100px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    width: 100%; 
+    height: 600px;
+    position: relative;
+}
+
+.img1 {
+    width: 100%;
+    height: 100%;
+    background: url('../img/lemans.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ECEFF4;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+}
+
+.overlay p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#content1, #content2, #content3 {
+    padding: 30px 20px;
+}
+
+#content1 .nav, #content1 .article_right1, #content1 .article_right2 {
+    padding: 25px;
+    background: #3B4252;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    color: #ECEFF4;
+}
+
+#content2 .article_box1, #content2 .article_box2, #content2 .article_box3 {
+    width: 30%;
+    float: left;
+    margin: 1.5%;
+    padding: 25px;
+    background: #4C566A;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ECEFF4;
+}
+
+#content3 article {
+    float: left;
+    width: 23%;
+    margin: 1%;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#content3 .article_square1 { background: url('../img/cadilac.jpg') center/cover; }
+#content3 .article_square2 { background: url('../img/lemans\ bmw.jpg') center/cover; }
+#content3 .article_square3 { background: url('../img/ferarri.jpg') center/cover; }
+#content3 .article_square4 { background: url('../img/porfche.jpg') center/cover; }
+
+#content3 article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #D8DEE9;
+    background: #1E1E1E;
+}
+
+@media (max-width: 768px) {
+    #content2 .article_box1, #content2 .article_box2, #content2 .article_box3 {
+        width: 100%;
+    }
+    #content3 article {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay h1 { font-size: 22px; }
+    #content3 article {
+        width: 100%;
+    }
+}

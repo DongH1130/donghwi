@@ -1,0 +1,93 @@
+/* 기본 구조와 브라우저 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+  display: block;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+body {
+  font-family: 'Arial, sans-serif';
+  overflow: hidden;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  height: 100px;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h3 {
+  color: #f0f0f0;
+  font-size: 2em;
+}
+
+/* 메뉴 스타일링 */
+.menu {
+  height: 60px;
+  background: linear-gradient(to right, #7bff57, #3edb8f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul li a {
+  padding: 15px 28px;
+  font-size: 1.2em;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.menu ul li a:hover {
+  font-style: italic;
+  background-color: rgba(103, 245, 233, 0.7);
+  color: #222;
+  transform: scale(1.1);
+}
+
+/* 메인 섹션 스타일링 */
+main {
+  flex: 1;
+  font-size: 7em;
+  color: #fff;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #002aff, #3ff98f);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* 푸터 스타일링 */
+footer {
+  height: 80px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
