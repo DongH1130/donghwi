@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레드불 레이싱 설문조사</title>
+    <link rel="stylesheet" href="css/survey style.css">
+</head>
+<body>
+    <div class="wrap">
+        <h2>레드불 레이싱 설문조사</h2>
+
+        <main>
+            <form name="설문" action="">
+                <fieldset>
+                    <label for="name">이름</label>
+                    <input type="text" id="name" name="name">
+
+                    <fieldset>
+                        <legend>성별</legend>
+                        <div class="checkbox-container">
+                            <input type="radio" id="male" name="sex" value="male">
+                            <label for="male">남</label>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="radio" id="female" name="sex" value="female">
+                            <label for="female">여</label>
+                        </div>
+                    </fieldset>
+
+                    <label for="birthdate">생년월일</label>
+                    <input type="text" id="birthdate" name="birthdate">
+
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" name="email" placeholder="comgild@nate.com" required>
+
+                    <label for="address">주소</label>
+                    <input type="text" id="address" name="address">
+
+                    <fieldset>
+                        <legend>1. 당신이 가장 좋아하는 F1 드라이버는 누구입니까?</legend>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="verstappen" name="driver" value="verstappen">
+                            <label for="verstappen">맥스 베르스타펜</label>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="perez" name="driver" value="perez">
+                            <label for="perez">세르지오 페레즈</label>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="other" name="driver" value="other">
+                            <label for="other">기타</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>2. 레드불 레이싱 팀에서 가장 좋아하는 점은 무엇입니까?</legend>
+                        <div class="checkbox-container">
+                            <input type="radio" id="teamwork" name="impression" value="teamwork">
+                            <label for="teamwork">팀워크</label>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="radio" id="innovation" name="impression" value="innovation">
+                            <label for="innovation">혁신적인 기술</label>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="radio" id="strategy" name="impression" value="strategy">
+                            <label for="strategy">레이스 실력</label>
+                        </div>
+                    </fieldset>
+
+                    <label for="grandprix">3. 가장 가고 싶은 그랑프리 개최 도시는?</label>
+                    <select name="grandprix" id="grandprix">
+                        <option>모나코</option>
+                        <option>스파 (벨기아)</option>
+                        <option selected>심버스톤 (영국)</option>
+                        <option>몬자 (이탈리아)</option>
+                        <option>기타</option>
+                    </select>
+
+                    <label for="favorite_aspect">4. F1 경기 중 가장 좋아하는 요소은 무엇입니까?</label>
+                    <select name="favorite_aspect" id="favorite_aspect" size="6" multiple>
+                        <option value="1" selected>스피드</option>
+                        <option value="2">차량 기술</option>
+                        <option value="3">드라이버의 기술</option>
+                        <option value="4">팀 스트래티</option>
+                        <option value="5">트랙 디자인</option>
+                        <option value="6">기타</option>
+                    </select>
+
+                    <label for="date">5. 가장 보고 싶은 그랑프리 날짜 지정</label>
+                    <input type="date" id="date" name="date">
+
+                    <label for="suggestions">6. 레드불 레이싱 팀에 바라는 점</label>
+                    <textarea id="suggestions" name="suggestions" rows="8"></textarea>
+
+                    <input type="submit" value="완료" class="btn">
+                    <input type="reset" value="다시" class="btn">
+                </fieldset>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

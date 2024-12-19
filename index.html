@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>나의 포트폴리오2024_홍길동</title>
+    <style>
+      /* 눈 내리는 효과 */
+      .snow {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #fff;
+        animation: snowfall 5s linear infinite;
+    }
+
+      @keyframes snowfall {
+          to {transform: translateY(100vh);}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+
+      <header>
+          <h3>2024 웹표준 수업 과제물 정리_박동휘</h3>          
+      </header>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="https://www.figma.com/proto/JmhtIyanNGdILt8v8VMMnT/%ED%94%BC%EA%B7%B8%EB%A7%88?node-id=67-99&node-type=frame&t=FnGHL6KjJ9kEG5aB-0&scaling=min-zoom&content-scaling=fixed&page-id=67%3A97&starting-point-node-id=67%3A99" target="_blank">MOTO dealership </a></li>
+          <li><a href="https://www.figma.com/proto/nm9axWej1yKtzbIvft25zA/Spotify-%EB%B0%95%EB%8F%99%ED%9C%98.%EB%B0%95%EC%84%B1%EB%B9%88?node-id=3-242&node-type=frame&t=FnGHL6KjJ9kEG5aB-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A242" target="_blank">Spotify-New Jeans </a></li>
+          <li><a href="sub1/F1 Red Bull Racing Team.html" target="_blank">Red Bull</a></li>
+          <li><a href="sub2/WRC.html" target="_blank">WRC</a></li>
+          <li><a href="sub3/key.html" target="_blank">Apple</a></li>
+          <li><a href="sub4/WEC.html" target="_blank">미디어쿼리(반응형)</a></li>
+          
+        </ul>
+      </nav>
+
+      <main>
+          박동휘 포트폴리오
+      </main>
+
+      <footer>
+        maded by 박동휘 in 2024. &nbsp;&nbsp;&nbsp; HP 010-7220-2021 &nbsp;&nbsp;&nbsp;  email : dbag6008@gmail.com
+      </footer>
+
+      <script>
+        // 이 부분은 필요에 따라 조절 가능
+          document.addEventListener("mousemove", (event) => {
+          createSnowflake(event.clientX, event.clientY);
+        });
+
+        function createSnowflake(x, y) {
+            const snowflake = document.createElement("div");
+            snowflake.className = "snow";
+            snowflake.style.left = `${x}px`;
+            snowflake.style.top = `${y}px`;
+            document.body.appendChild(snowflake);
+
+            // 눈 하나가 떨어진 후 제거
+            snowflake.addEventListener("animationiteration", () => {
+                snowflake.remove();
+            });
+        }
+      </script>
+
+    </div>
+  </body>
+</html>
